@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import ShipCanvas from "@/components/canvas/Ship";
 import Nav from "@/components/Nav";
@@ -15,7 +14,7 @@ export default function HomePage() {
         src="/assets/theme/black-hole.mp4"
         loop
         autoPlay
-        onLoadedMetadata={(e) => (e.currentTarget.playbackRate = 2)}
+        muted
       />
       <Nav />
       <StarsCanvas />

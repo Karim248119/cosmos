@@ -35,8 +35,7 @@ export default function EpisodesPage() {
         src="/assets/theme/sea.mp4"
         loop
         autoPlay
-        onLoadedMetadata={(e) => (e.currentTarget.playbackRate = 5)}
-      />
+        muted      />
       <Nav />
       <StarsCanvas />
       <div className="w-2/3 h-screen fixed top-0 left-0">
