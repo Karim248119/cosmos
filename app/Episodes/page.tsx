@@ -15,8 +15,12 @@ import { IoRocket } from "react-icons/io5";
 import { GiEagleEmblem } from "react-icons/gi";
 import { FaImdb } from "react-icons/fa";
 import { PiClockFill } from "react-icons/pi";
+import Button from "@/components/Button";
+import { FaHeart, FaPlay } from "react-icons/fa6";
+import { BiPlay } from "react-icons/bi";
 
 export default function EpisodesPage() {
+  const [fav, setFav] = useState(true);
   const swiperRef = useRef<any>(null);
   const [activeTab, setActiveTab] = useState(cosmosEpisodes[0].id);
 
@@ -107,11 +111,19 @@ export default function EpisodesPage() {
                 </div>
                 <p className="h-10">{episode.description}</p>
                 <div className=" flex items-center gap-4">
-                  <Link href={episode.ihavenotv}>
-                    <Icon Name={IoRocket} />
-                  </Link>
-                  <Link href={episode.watchdocumentaries}>
-                    <Icon Name={GiEagleEmblem} />
+                  <Link
+                    href={{
+                      pathname: "/Episodes/episode",
+                      query: { episode: episode.watchdocumentaries },
+                    }}
+                  >
+                    <Button
+                      title="WATCH NOW"
+                      className="w-[20vw]"
+                      icon={
+                        <FaPlay className="group-hover:text-black z-30 text-sm -mt-[2px]" />
+                      }
+                    />
                   </Link>
                 </div>
               </div>

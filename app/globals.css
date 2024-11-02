@@ -22,15 +22,18 @@ body {
   box-shadow: 0 0 5px #ffff, 0 0 10px #ffff, 0 0 20px #ffff, 0 0 30px #ffff;
   border-radius: 8px; /* Adjust the radius to your needs */
 }
-.neon-border {
-  border: 2px solid transparent; /* Add an initial border size */
-  box-shadow: 0 0 5px #ffff, 0 0 10px #ffff, 0 0 20px #ffff, 0 0 30px #ffff;
-  border-radius: 8px; /* Adjust the radius to your needs */
-}
 
 /* globals.css */
 
 .neon-hover:hover {
+  background: radial-gradient(
+    circle,
+    #ffff,
+    #fff
+  ); /* Adjust colors for a soft-to-bright glow */
+  box-shadow: 0 0 10px #ffff, 0 0 20px #ffff, 0 0 3px #ffff, 0 0 40px #ffff;
+}
+.neon-bg {
   background: radial-gradient(
     circle,
     #ffff,
