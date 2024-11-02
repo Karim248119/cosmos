@@ -16,17 +16,14 @@ import { TbMessageBolt } from "react-icons/tb";
 export default function ContactPage() {
   return (
     <div className="flex-1 flex h-screen w-full relative">
-      <video
-        className="w-screen h-screen object-cover absolute top-0 left-0"
-        src="/assets/theme/galaxy.mp4"
-        loop
-        autoPlay
-        onLoadedMetadata={(e) => (e.currentTarget.playbackRate = 2)}
+      <img
+        className="w-screen h-[110vh] object-cover absolute -top-10 left-0"
+        src="/assets/theme/earth.jpg"
       />
       <Nav />
       <StarsCanvas />
-      <div className="w-2/3 h-screen cursor-grab">
-        <ShipCanvas envSrc="./assets/theme/galaxy.jpg" />
+      <div className="w-2/3 h-screen bg-cover cursor-grab">
+        <ShipCanvas envSrc="./assets/theme/earth2.jpg" />
       </div>
       <div className="h-screen  flex flex-row-reverse gap-10 justify-center items-center  absolute pt-20 right-20">
         <div className="flex flex-col gap-10">
@@ -34,7 +31,7 @@ export default function ContactPage() {
           <Icon Name={FaLinkedinIn} />
           <Icon Name={FaXTwitter} />
         </div>
-        <form className="w-[30vw]  h-[60vh] relative overflow-hidden flex flex-col gap-10 rounded-bl-2xl rounded-tr-2xl justify-center items-center border font-share-tech-mono">
+        <form className="w-[30vw] text-sm h-[60vh] relative overflow-hidden flex flex-col gap-10 rounded-bl-2xl rounded-tr-2xl justify-center items-center border font-share-tech-mono">
           {/* <div className="w-full h-full absolute top-0 left-0 bg-white/20 blur-sm z-0" /> */}
           <div className="border-b w-[80%] border-white flex justify-center items-center gap-3 px-5 py-1">
             <FaUserAstronaut className="text-xl" />

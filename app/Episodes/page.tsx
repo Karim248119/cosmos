@@ -30,23 +30,20 @@ export default function EpisodesPage() {
 
   return (
     <div className="bg-black h-screen ">
-      <video
+      <img
         className="w-screen h-screen object-cover absolute top-0 left-0"
-        src="/assets/theme/sea.mp4"
-        loop
-        autoPlay
-        muted      />
+        src="/assets/theme/solar.jpg"
+      />
       <Nav />
       <StarsCanvas />
-      <div className="w-2/3 h-screen fixed top-0 left-0">
-        <ShipCanvas envSrc="./assets/theme/sea.jpg" />
+      <div className="w-2/3 h-screen fixed top-0 left-0 cursor-grab">
+        <ShipCanvas envSrc="./assets/theme/solar3.jpg" />
       </div>
       <Tabs
         className="h-screen flex flex-col justify-center items-end absolute pt-20 right-20 w-[45vw]"
         value={activeTab}
         onValueChange={handleTabChange}
       >
-        {/* Render the Swiper without wrapping img directly in TabsTrigger */}
         <Swiper
           spaceBetween={20}
           slidesPerView={3}

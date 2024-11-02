@@ -1,12 +1,7 @@
 "use client";
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  OrbitControls,
-  Environment,
-  useGLTF,
-  Texture,
-} from "@react-three/drei";
+import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 
 const Ship = () => {
@@ -51,21 +46,13 @@ const ShipCanvas = ({
       <Suspense fallback={null}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI}
+          maxPolarAngle={Math.PI / 2}
           minPolarAngle={0}
           autoRotate
+          autoRotateSpeed={0.5} // Adjust speed as needed
         />
-        {/* Environment Map with increased intensity */}
-        <Environment
-          files={envSrc} // Bright HDRI environment
-          backgroundIntensity={0} // Brighten the environment reflections
-
-          // backgroundRotation={
-          //   new THREE.Euler(0, Math.PI / 2, 0) // Rotate the environment
-          // }
-        />
-        {/* Additional Ambient and Directional Lighting */}
-        <ambientLight intensity={1.5} /> {/* Increased ambient light */}
+        <Environment files={envSrc} backgroundIntensity={5} />
+        <ambientLight intensity={1.5} />
         <directionalLight position={[10, 10, 10]} intensity={2} />
         <directionalLight position={[-10, 10, -10]} intensity={2} />
         <Ship />

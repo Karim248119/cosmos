@@ -24,9 +24,7 @@ export default function Nav() {
   const path = usePathname();
   return (
     <div className=" h-[15vh]  w-screen flex justify-between items-center px-20  absolute top-0 left-0 z-20 ">
-      {/* <div className="w-screen h-full bg-white opacity-30 backdrop-blur-md rounded-lg absolute top-0 left-0 -z-10" /> */}
-
-      <div>COSMOS</div>
+      <div className="font-semibold">COSMOS</div>
       <div className="flex justify-center items-center gap-8 text-sm font-share-tech-mono">
         {navlist.map((item) => (
           <React.Fragment key={item.id}>
