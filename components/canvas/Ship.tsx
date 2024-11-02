@@ -13,8 +13,9 @@ const Ship = () => {
   const { scene } = useGLTF("./assets/models/ship/scene.gltf");
 
   scene.traverse((child) => {
-    if (child.isMesh) {
-      child.material = new THREE.MeshStandardMaterial({
+    if ((child as THREE.Mesh).isMesh) {
+      const mesh = child as THREE.Mesh;
+      mesh.material = new THREE.MeshStandardMaterial({
         color: 0xffffff, // White base color for a silver effect
         metalness: 1, // Fully metallic
         roughness: 0, // Smooth, mirror-like surface
@@ -39,7 +40,6 @@ const ShipCanvas = ({
       gl={{
         preserveDrawingBuffer: true,
         toneMapping: THREE.ACESFilmicToneMapping,
-        outputEncoding: THREE.sRGBEncoding,
       }}
       camera={{
         fov: 45,

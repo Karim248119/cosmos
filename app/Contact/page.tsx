@@ -58,7 +58,7 @@ export default function ContactPage() {
             />
           </div>
           <button className="w-[80%] relative h-12 border border-white group overflow-hidden neon-btn-hover hover:text-black text-xl duration-700 ease-in-out transition-all ">
-            <span className="z-20 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+            <span className="z-20 text-base absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
               SEND MESSAGE
             </span>
             <div className="w-full h-full absolute -left-full group-hover:left-0 top-0 z-10 duration-300 bg-white" />
