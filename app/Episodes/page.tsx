@@ -120,9 +120,7 @@ export default function EpisodesPage() {
                     <Button
                       title="WATCH NOW"
                       className="w-[20vw]"
-                      icon={
-                        <FaPlay className="group-hover:text-black z-30 text-sm -mt-[2px]" />
-                      }
+                      icon={<FaPlay className="group-hover:text-black z-30 " />}
                     />
                   </Link>
                 </div>
