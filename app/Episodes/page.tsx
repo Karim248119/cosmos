@@ -18,6 +18,7 @@ import { PiClockFill } from "react-icons/pi";
 import Button from "@/components/Button";
 import { FaHeart, FaPlay } from "react-icons/fa6";
 import { BiPlay } from "react-icons/bi";
+import Section from "@/components/Section";
 
 export default function EpisodesPage() {
   const [fav, setFav] = useState(true);
@@ -33,7 +34,7 @@ export default function EpisodesPage() {
   };
 
   return (
-    <div className="bg-black h-screen ">
+    <Section className="bg-black h-screen ">
       <img
         className="w-screen h-screen object-cover absolute top-0 left-0"
         src="/assets/theme/solar.jpg"
@@ -129,6 +130,6 @@ export default function EpisodesPage() {
           ))}
         </div>
       </Tabs>
-    </div>
+    </Section>
   );
 }

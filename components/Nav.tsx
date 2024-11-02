@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import { GiRingedPlanet } from "react-icons/gi";
 
 export default function Nav() {
   const navlist = [
@@ -24,7 +25,8 @@ export default function Nav() {
   const path = usePathname();
   return (
     <div className=" h-[15vh]  w-screen flex justify-between items-center px-20  absolute top-0 left-0 z-20 ">
-      <div className="font-semibold">COSMOS</div>
+      <GiRingedPlanet size={40} />
+
       <div className="flex justify-center items-center gap-8 text-sm font-share-tech-mono">
         {navlist.map((item) => (
           <React.Fragment key={item.id}>

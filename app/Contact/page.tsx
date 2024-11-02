@@ -4,6 +4,7 @@ import ShipCanvas from "@/components/canvas/Ship";
 import StarsCanvas from "@/components/canvas/Stars";
 import Icon from "@/components/Icon";
 import Nav from "@/components/Nav";
+import Section from "@/components/Section";
 import React from "react";
 import {
   FaFacebookF,
@@ -16,7 +17,7 @@ import { TbMessageBolt } from "react-icons/tb";
 
 export default function ContactPage() {
   return (
-    <div className="flex-1 flex h-screen w-full relative">
+    <Section className="flex-1 flex h-screen w-full relative">
       <img
         className="w-screen h-[110vh] object-cover absolute -top-10 left-0"
         src="/assets/theme/earth.jpg"
@@ -58,6 +59,6 @@ export default function ContactPage() {
           <Button title="SEND MESSAGE" className="w-[80%]" />
         </form>
       </div>
-    </div>
+    </Section>
   );
 }

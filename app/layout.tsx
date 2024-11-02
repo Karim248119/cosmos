@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { JetBrains_Mono, Share_Tech_Mono, Roboto } from "next/font/google";
+import StairTransition from "@/components/NavTransition";
 
 export const metadata: Metadata = {
   title: "COSMOS",
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`antialiased text-white bg-black flex ${ShareTechMono.variable} ${JetBrainsMono.variable} ${roboto.className}`}
       >
+        <StairTransition />
         <main className={`w-screen font-jetbrains-mono`}>{children}</main>
       </body>
     </html>

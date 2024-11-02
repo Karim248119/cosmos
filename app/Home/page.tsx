@@ -6,9 +6,11 @@ import { IoPlanet } from "react-icons/io5";
 import { GiSandsOfTime } from "react-icons/gi";
 import { BiSolidLeaf } from "react-icons/bi";
 import StarsCanvas from "@/components/canvas/Stars";
+import Section from "@/components/Section";
+import { FaReact } from "react-icons/fa6";
 export default function HomePage() {
   return (
-    <div className="flex-1 flex h-screen w-full relative  bg-black">
+    <Section className="flex-1 flex h-screen w-full relative  bg-black">
       <video
         className="w-screen h-screen object-cover absolute top-0 left-0"
         src="/assets/theme/black-hole.mp4"
@@ -29,7 +31,7 @@ export default function HomePage() {
           <h2 className="text-8xl font-bold font-sans -mr-3">COSMOS</h2>
         </div>
         <div className="flex items-center mt-5">
-          <Icon Name={IoPlanet} />
+          <Icon Name={FaReact} />
           <div className="h-[1px] w-20 neon-bg bg-white" />
           <Icon Name={GiSandsOfTime} />
           <div className="h-[1px] w-20 neon-bg bg-white" />
@@ -42,6 +44,6 @@ export default function HomePage() {
           </p>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }
