@@ -48,8 +48,7 @@ const ShipCanvas = ({
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={0}
-          autoRotate
-          autoRotateSpeed={0.5} // Adjust speed as needed
+          autoRotate={true}
         />
         <Environment files={envSrc} backgroundIntensity={5} />
         <ambientLight intensity={1.5} />
