@@ -10,13 +10,13 @@ export default function Stairs() {
   };
   const cosmos = [
     "C",
-    <span className="rounded-full neon-bg py-6 px-4 text-black">
-      <IoPlanet size={60} />
+    <span className="rounded-full neon-bg md:py-6 py-2 md:px-4 px-1 text-black">
+      <IoPlanet className="md:text-8xl text-3xl" />
     </span>,
     "S",
     "M",
-    <span className="rounded-full neon-bg py-6 px-4 text-black">
-      <IoPlanet size={60} />
+    <span className="rounded-full neon-bg md:py-6 py-2 md:px-4 px-1 text-black">
+      <IoPlanet className="md:text-8xl text-3xl" />
     </span>,
     "S",
   ];
@@ -35,7 +35,7 @@ export default function Stairs() {
               ease: "easeInOut",
               delay: index * 0.1,
             }}
-            className=" h-full w-full relative bg-black neon-text flex  justify-center items-center text-9xl font-bold"
+            className=" h-full w-full relative bg-black neon-text flex  justify-center items-center md:text-9xl text-6xl font-bold"
           >
             {item}
           </motion.div>

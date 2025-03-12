@@ -12,7 +12,7 @@ export default function Icon({
   return (
     <button
       onClick={onClick}
-      className={`p-3 rounded-full border-2 border-white text-white text-lg neon-hover hover:text-black ${className}`}
+      className={`md:p-3 p-2 rounded-full border-2 border-white text-white md:text-lg text-xs neon-hover hover:text-black ${className}`}
     >
       <Name />
     </button>

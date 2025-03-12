@@ -41,17 +41,17 @@ export default function EpisodesPage() {
       />
       <Nav />
       <StarsCanvas />
-      <div className="w-2/3 h-screen fixed top-0 left-0 cursor-grab">
+      <div className="md:w-2/3 w-full h-screen fixed top-0 left-0 cursor-grab">
         <ShipCanvas envSrc="./assets/theme/solar3.jpg" />
       </div>
       <Tabs
-        className="h-screen flex flex-col justify-center items-end absolute pt-20 right-20 w-[45vw]"
+        className="h-screen flex flex-col justify-center items-end absolute pt-20 md:right-20 right-5 md:w-[45vw] w-[80vw]"
         value={activeTab}
         onValueChange={handleTabChange}
       >
         <Swiper
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView={window.innerWidth > 400 ? 3 : 1}
           scrollbar
           centeredSlides={true}
           className="w-full"
@@ -92,25 +92,27 @@ export default function EpisodesPage() {
                 </div>
               </div>
               <div className="flex flex-col gap-5 items-end text-end">
-                <h2 className="text-3xl font-mono font-extrabold">
+                <h2 className="md:text-3xl text-lg font-mono font-extrabold">
                   {episode.name}
                 </h2>
-                <div className="flex items-center gap-3 text-xs">
-                  <div className="flex items-center gap-2 border border-white rounded-full px-3 py-1">
+                <div className="flex items-center md:gap-3 gap-1 md:text-xs text-[10px]">
+                  <div className="flex items-center gap-2 border border-white rounded-full md:px-3 px-2 py-1 ">
                     <FaImdb />
                     <p>{episode.IMDBrate}</p>
                   </div>
-                  <div className="flex items-center gap-2 border border-white rounded-full px-3 py-1">
+                  <div className="flex items-center gap-2 border border-white rounded-full md:px-3 px-2 py-1 ">
                     <SiRottentomatoes />
                     <p>{episode.rottenTomatoesRate}</p>
                   </div>
-                  <div className="flex items-center gap-2 border border-white rounded-full px-3 py-1">
+                  <div className="flex items-center gap-2 border border-white rounded-full md:px-3 px-2 py-1 ">
                     <PiClockFill />
                     <p>{episode.duration}</p>
                   </div>
                   <div className="flex items-center gap-3"></div>
                 </div>
-                <p className="h-10">{episode.description}</p>
+                <p className="h-10 md:text-base text-xs">
+                  {episode.description}
+                </p>
                 <div className=" flex items-center gap-4">
                   <Link
                     href={{
@@ -120,7 +122,7 @@ export default function EpisodesPage() {
                   >
                     <Button
                       title="WATCH NOW"
-                      className="w-[20vw]"
+                      className="md:w-[20vw] w-[50vw]"
                       icon={<FaPlay className="group-hover:text-black z-30 " />}
                     />
                   </Link>
