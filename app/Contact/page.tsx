@@ -27,7 +27,7 @@ export default function ContactPage() {
       <div className="md:w-2/3 w-full h-screen bg-cover cursor-grab">
         <ShipCanvas envSrc="./assets/theme/earth2.jpg" />
       </div>
-      <div className="h-screen  flex md:flex-row-reverse flex-col-reverse gap-10 justify-center items-center  absolute md:pt-20 pt-10 md:right-20 right-1/2 translate-x-1/2 md:translate-x-0">
+      <div className="h-screen  flex md:flex-row-reverse flex-col-reverse gap-10 justify-center items-center  absolute md:pt-20 pt-5 md:right-20 right-1/2 translate-x-1/2 md:translate-x-0">
         <div className="flex md:flex-col md:gap-10 gap-2">
           <a href="https://www.linkedin.com/in/karim248/" target="_blank">
             <Icon Name={FaFacebookF} />

@@ -51,7 +51,7 @@ export default function EpisodesPage() {
         <ShipCanvas envSrc="./assets/theme/solar3.jpg" />
       </div>
       <Tabs
-        className="h-screen flex flex-col justify-center items-end absolute md:pt-20 pt-10 md:right-20 right-5 md:w-[45vw] w-[80vw]"
+        className="h-screen flex flex-col justify-center items-end absolute md:pt-20 pt-5 md:right-20 right-5 md:w-[45vw] w-[80vw]"
         value={activeTab}
         onValueChange={handleTabChange}
       >
