@@ -9,8 +9,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/standing-up-in-the-milky-way-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762793482765?nochat=1",
-    poster:
-      "https://c4.wallpaperflare.com/wallpaper/476/416/957/tv-show-cosmos-a-spacetime-odyssey-wallpaper-thumb.jpg",
+    poster: "/1.webp",
   },
   {
     id: "02",
@@ -22,8 +21,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/some-of-the-things-that-molecules-do-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762802461197?nochat=1",
-    poster:
-      "https://rocketstem.b-cdn.net/wp-content/uploads/2014/03/102_A28_010_tdcomp_af_v024.0118600271_jw-scaled.jpg",
+    poster: "/2.webp",
   },
   {
     id: "03",
@@ -35,7 +33,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/when-knowledge-conquered-fear-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762812815885?nochat=1",
-    poster: "https://i.ytimg.com/vi/O820fO9P-z8/hq720.jpg",
+    poster: "/3.webp",
   },
   {
     id: "04",
@@ -48,7 +46,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/a-sky-full-of-ghosts-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762821204493?nochat=1",
-    poster: "https://scitechdaily.com/images/Saturn-Astronomy-Art-Concept.jpg",
+    poster: "/4.webp",
   },
   {
     id: "05",
@@ -61,8 +59,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/hiding-in-the-light-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762829527565?nochat=1",
-    poster:
-      "https://lh3.googleusercontent.com/ci/AL18g_SpVdUA8yovA11x6HyCFLIrirMML676bTgLmPHl3j-layioMBZlqK1-ZIK0jdcEiC-fq8KeKMo",
+    poster: "/5.webp",
   },
   {
     id: "06",
@@ -75,8 +72,9 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/deeper-deeper-deeper-still-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762845846029?nochat=1",
-    poster: "https://cdn.mos.cms.futurecdn.net/9Y8SXNLpFF6ENYKuuWrQ7K.jpg",
+    poster: "/6.webp",
   },
+
   {
     id: "07",
     name: "The Clean Room",
@@ -87,8 +85,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/the-clean-room-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762853054989?nochat=1",
-    poster:
-      "https://i.extremetech.com/imagery/content-types/048kVQifpf5xxinNNQ8Dgm5/hero-image.fit_lim.v1678673201.jpg",
+    poster: "/7.webp",
   },
   {
     id: "08",
@@ -101,7 +98,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/sisters-of-the-sun-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762862492173?nochat=1",
-    poster: "https://i.ytimg.com/vi/zrXPdsc8fxo/hq720.jpg",
+    poster: "/8.webp",
   },
   {
     id: "09",
@@ -114,8 +111,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/the-lost-worlds-of-planet-earth-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762869045773?nochat=1",
-    poster:
-      "https://www.thoughtco.com/thmb/NbniBPCMzu9Mf55dIfqMNBPOQHs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/COSMOS113_12-56a2b3f03df78cf77278f3a3.jpg",
+    poster: "/9.webp",
   },
   {
     id: "10",
@@ -128,7 +124,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/the-electric-boy-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762862492173?nochat=1",
-    poster: "https://i.ytimg.com/vi/7UxRbjwRQSM/hq720.jpg",
+    poster: "/10.jpg",
   },
   {
     id: "11",
@@ -140,8 +136,7 @@ export const cosmosEpisodes = [
       "A look at the idea of immortality and the nature of life and death.",
     ihavenotv: "https://ihavenotv.com/the-immortals-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762884119053?nochat=1",
-    poster:
-      "https://t3.ftcdn.net/jpg/07/27/73/66/360_F_727736652_LOBBs1pUURJEAPxSjJfRbZXUrxvsO8bz.jpg",
+    poster: "/11.webp",
   },
   {
     id: "12",
@@ -154,8 +149,7 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/the-world-set-free-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762892900877?nochat=1",
-    poster:
-      "https://ew.com/thmb/_X9pmnObLPzpk-aeHz7ns4wgbp4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cosmos-ship-02a510761244404eb04937c1f8a9f06c.jpg",
+    poster: "/12.webp",
   },
   {
     id: "13",
@@ -168,7 +162,6 @@ export const cosmosEpisodes = [
     ihavenotv:
       "https://ihavenotv.com/unafraid-of-the-dark-cosmos-a-spacetime-odyssey",
     watchdocumentaries: "//ok.ru/videoembed/3762901289485?nochat=1",
-    poster:
-      "https://is1-ssl.mzstatic.com/image/thumb/Sju8ZtRNJ2usV3ksOY2Mqw/1200x675.jpg",
+    poster: "/13.webp",
   },
 ];
