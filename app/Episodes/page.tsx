@@ -1,7 +1,7 @@
 "use client";
 import StarsCanvas from "@/components/canvas/Stars";
 import Nav from "@/components/Nav";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { cosmosEpisodes } from ".";
 import ShipCanvas from "@/components/canvas/Ship";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -24,6 +24,13 @@ export default function EpisodesPage() {
   const [fav, setFav] = useState(true);
   const swiperRef = useRef<any>(null);
   const [activeTab, setActiveTab] = useState(cosmosEpisodes[0].id);
+  const [slidesPerView, setSlidesPerView] = useState(1);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setSlidesPerView(window.innerWidth > 400 ? 3 : 1);
+    }
+  }, []);
 
   const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
@@ -51,7 +58,7 @@ export default function EpisodesPage() {
       >
         <Swiper
           spaceBetween={20}
-          slidesPerView={window.innerWidth > 400 ? 3 : 1}
+          slidesPerView={slidesPerView}
           scrollbar
           centeredSlides={true}
           className="w-full"
@@ -74,7 +81,7 @@ export default function EpisodesPage() {
           ))}
         </Swiper>
 
-        <div className="mt-5 w-full">
+        <div className="mt-8 w-full">
           {cosmosEpisodes.map((episode) => (
             <TabsContent key={episode.id} value={episode.id}>
               <div className="flex flex-row-reverse items-center">
@@ -92,11 +99,11 @@ export default function EpisodesPage() {
                 </div>
               </div>
               <div className="flex flex-col gap-5 items-end text-end">
-                <h2 className="md:text-3xl text-lg font-mono font-extrabold">
+                <h2 className="md:text-3xl text-lg font-mono font-extrabold h-14 flex items-center">
                   {episode.name}
                 </h2>
-                <div className="flex items-center md:gap-3 gap-1 md:text-xs text-[10px]">
-                  <div className="flex items-center gap-2 border border-white rounded-full md:px-3 px-2 py-1 ">
+                <div className="flex items-center md:gap-3 gap-1 md:text-xs text-[8px]">
+                  <div className="flex items-center justify-center gap-2 border border-white rounded-full md:px-3 px-2 py-1 ">
                     <FaImdb />
                     <p>{episode.IMDBrate}</p>
                   </div>
@@ -110,7 +117,7 @@ export default function EpisodesPage() {
                   </div>
                   <div className="flex items-center gap-3"></div>
                 </div>
-                <p className="h-10 md:text-base text-xs">
+                <p className="h-10 md:text-base text-[9px]">
                   {episode.description}
                 </p>
                 <div className=" flex items-center gap-4">
