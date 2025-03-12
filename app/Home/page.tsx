@@ -23,7 +23,7 @@ export default function HomePage() {
       <div className="md:w-2/3 w-full h-screen cursor-grab">
         <ShipCanvas envSrc="./assets/theme/black-hole.jpg" />
       </div>
-      <div className="h-screen  flex flex-col justify-center items-end absolute pt-20 md:right-20 right-5 ">
+      <div className="h-screen  flex flex-col justify-center items-end absolute md:pt-20 pt-10 md:right-20 right-5 ">
         <div className=" flex flex-col justify-end">
           <span className="font-share-tech-mono text-end md:text-base text-xs">
             A Spacetime Odyssey

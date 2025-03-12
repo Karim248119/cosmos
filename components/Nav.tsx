@@ -24,7 +24,7 @@ export default function Nav() {
   ];
   const path = usePathname();
   return (
-    <div className=" h-[15vh]  w-screen flex justify-between items-center md:px-20 px-5  absolute top-0 left-0 z-20 ">
+    <div className=" md:h-[15vh] h-14  w-screen flex justify-between items-center md:px-20 px-5  absolute top-0 left-0 z-20 ">
       <GiRingedPlanet className="md:text-4xl text-2xl" />
 
       <div className="flex justify-center items-center md:gap-8 gap-2 md:text-sm text-[10px] font-share-tech-mono">
@@ -38,9 +38,7 @@ export default function Nav() {
             >
               {item.name}
             </Link>
-            {i < 2 && (
-              <div className="w-1 aspect-square neon-bg rounded-full" />
-            )}
+            {i < 2 && <div className="text-white/80">|</div>}
           </React.Fragment>
         ))}
       </div>
